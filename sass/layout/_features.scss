@@ -1,0 +1,33 @@
+.features {
+    display: flex;
+    gap: 30px;
+
+    &__decor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+    }
+
+    &__title {
+        font-size: 14px;
+        letter-spacing: 0.03em; 
+        text-transform: uppercase;
+        line-height: calc(16/14);
+        margin-bottom: 10px;    
+    }
+
+    &__text {
+        color: var(--colorOfParagraphs);
+        font-weight: 400;
+        line-height: calc(24/14);
+        letter-spacing: 0.03em;
+        width: 270px;
+    }
+
+  }
+  
+  

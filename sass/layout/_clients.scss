@@ -1,0 +1,27 @@
+.clients {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 172px;
+        height: 94px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        color: var(--iconsColor);
+      
+        transition: border var(--animation), color var(--animation);
+    }
+
+    &__link:hover,
+    &__link:focus {
+      border: 1px solid var(--activeSelection);
+      color: var(--activeSelection);
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
