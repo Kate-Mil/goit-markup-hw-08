@@ -1,12 +1,23 @@
 .footer {
     background-color: var(--backgroundFooter);
-    padding-top: 60px;
-    padding-bottom: 60px;
+
 
     & .container {
+
+      @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
+        flex-wrap: wrap;
+        flex-basis: calc((100% - 165px)/2);
+
       }
+      
+      @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        flex-basis: ;
+
+      }
+    }
 
     &-adress {
         font-style: normal;
@@ -15,7 +26,11 @@
   }
   
   .addres-info {
-    min-width: 231px;
+    min-width: 232px;
+
+    @media screen and (min-width: 768px) , (max-width: 1199px) {
+      margin-bottom: 50px;
+      } 
   }
   
   .footer-contacts {
