@@ -1,4 +1,6 @@
-.btn{
+.btn {
+    min-width: 200px;
+    min-height: 50px;
     background-color: var(--activeSelection);
     color: var(--addColor);
     letter-spacing: 0.06em;
