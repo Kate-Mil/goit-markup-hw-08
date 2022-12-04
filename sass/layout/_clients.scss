@@ -1,12 +1,16 @@
 .clients {
-    display: flex;
-    justify-content: space-between;
-
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 15px;
+   
+    
+ 
     &__link {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 172px;
+        /* flex-basis: calc((100% - 4 * 15) / 2); */
+        width: 212px;
         height: 94px;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
@@ -24,4 +28,15 @@
     &__icon {
         fill: currentColor;
     }
+
+
+    @media screen and (min-width: 768px) {
+        width: 228px; 
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+        width: 172px;
+    }
+
 }
