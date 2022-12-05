@@ -3,11 +3,14 @@
 
 
     & .container {
+      gap: 60px;
+      align-items: center;
 
       @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
+        
         flex-basis: calc((100% - 165px)/2);
 
       }
