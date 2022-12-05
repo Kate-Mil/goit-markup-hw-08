@@ -3,37 +3,36 @@
 
 
     & .container {
-      gap: 60px;
-      align-items: center;
 
       @media screen and (min-width: 768px) {
         display: flex;
         align-items: baseline;
         flex-wrap: wrap;
-        
-        flex-basis: calc((100% - 165px)/2);
-
       }
       
       @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
-        flex-basis: ;
-
       }
     }
 
     &-adress {
-        font-style: normal;
+      font-style: normal;
+      text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
     }
-   
+    }
   }
   
   .addres-info {
     min-width: 232px;
+    margin-bottom: 60px;
 
-    @media screen and (min-width: 768px) , (max-width: 1199px) {
-      margin-bottom: 50px;
-      } 
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 61px;
+    }
+    
   }
   
   .footer-contacts {
@@ -47,7 +46,6 @@
         color: var(--activeSelection);
     }
 }
-   
   .footer-map {
     color: var(--addColor);
     letter-spacing: 0.03em;
@@ -56,10 +54,16 @@
   .logo--footer {
     color: var(--addColor);
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    
+    @media screen and (min-width: 1200px) {
+      justify-content: left;
+    }
   }
   
   .footer-adress-links:not(:last-child) {
-    margin-bottom:  9px;
+    margin-bottom: 9px;
   }
   
   .footer-text {
@@ -69,16 +73,27 @@
     margin-bottom: 20px;
     line-height: calc(16/14);
     letter-spacing: 0.03em;
-    font-size: 14px;
+    text-align: center;
+
+    @media screen and (min-width: 1200px) {
+      text-align: left;
+    }
   }
 
     footer .social-links {
+      margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      margin-left: 165px;
+      
+    }  
+
+    @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: 93px;
   }  
+}
 
-   .footer .social-links__icon {
+  .footer .social-links__icon {
     fill: var(--addColor);
-   }
-
-   
+  }

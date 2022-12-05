@@ -274,17 +274,33 @@ a {
   fill: currentColor;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    width: 450px;
+    margin: auto;
+  }
+}
+
 .subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 12px;
+  }
 }
 .subscribe-form__field {
-  width: 358px;
+  width: 450px;
   height: 50px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
@@ -295,6 +311,11 @@ a {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe-form__field {
+    width: 358px;
+  }
 }
 .subscribe-form__field::-webkit-input-placeholder {
   -webkit-box-align: center;
@@ -333,57 +354,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
-  padding: 10px 13px 10px 28px;
+  gap: 12px;
+  padding: 10px 13px 10px 31px;
 }
 
 .btn__icon {
   fill: currentColor;
 }
 
-/* 
- .sibscribe-form {
-  display: flex;
-  align-items: center;
-  gap: 12px;
- }
-
- .sibscribe-form-btn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 13px 10px 28px;
-  min-width: 200px;
-  min-height: 50px;
-
-}
-
- .btn-icon {
-  fill: currentColor;
- }
-
- .sibscribe-form-field {
-  width: 358px;
-  height: 50px;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  outline: unset;
-  background-color: transparent;
-  padding: 15px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
- }
-
- .sibscribe-form-field::placeholder {
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-
- }
-
-
-   */
 .close-btn {
   position: absolute;
   top: 8px;
@@ -694,20 +672,31 @@ a {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-preferred-size: calc((100% - 165px) / 2);
-        flex-basis: calc((100% - 165px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 .footer-adress {
   font-style: normal;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-adress {
+    text-align: left;
+  }
 }
 
 .addres-info {
   min-width: 232px;
+  margin-bottom: 60px;
 }
-@media screen and (min-width: 768px), (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .addres-info {
-    margin-bottom: 50px;
+    margin-left: 61px;
   }
 }
 
@@ -730,6 +719,19 @@ a {
 .logo--footer {
   color: var(--addColor);
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .logo--footer {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .footer-adress-links:not(:last-child) {
@@ -743,12 +745,27 @@ a {
   margin-bottom: 20px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
-  font-size: 14px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-text {
+    text-align: left;
+  }
 }
 
 footer .social-links {
-  margin-left: 70px;
-  margin-right: 93px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  footer .social-links {
+    margin-left: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .social-links {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }
 
 .footer .social-links__icon {
