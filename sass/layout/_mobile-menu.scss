@@ -36,3 +36,20 @@
   }
 
 }
+
+.menu-container {
+  display: none;
+
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: aqua;
+  padding: 40px;
+
+
+
+  &.is-open {
+    display: block;
+  }
+}
