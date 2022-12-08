@@ -147,7 +147,8 @@
             <li class="services__item">
               <div class="services__thumb">
                 <img
-                src="./images/services/box1.jpg"
+                srcset="./images/services/img1_370.jpg 1x, ./images/services/img1_740.jpg 2x"
+                src="./images/services/img1_370.jpg"
                 alt="десктопні додатки"
                 width="370"
               />
@@ -157,7 +158,8 @@
             <li class="services__item">
               <div class="services__thumb">
                 <img
-                src="./images/services/box2.jpg"
+                srcset="./images/services/img2_370.jpg 1x, ./images/services/img2_740.jpg 2x"
+                src="./images/services/img2_370.jpg"
                 alt="мобільні додатки"
                 width="370"
               />
@@ -167,7 +169,8 @@
             <li class="services__item">
               <div class="services__thumb">
                 <img
-                src="./images/services/box3.jpg"
+                srcset="./images/services/img3_370.jpg 1x, ./images/services/img3_740.jpg 2x"
+                src="./images/services/img3_370"
                 alt="дизайнерські рішення"
                 width="370"
               />
@@ -183,10 +186,20 @@
           <ul class="card-set">
             <li class="card-set__item">
               <img
-                src="./images/team/photo-Igor-Demyanenko.jpg"
+                srcset="
+                ./images/team/img-1_270.jpg 270w,
+                ./images/team/img-1_354.jpg 354w,
+                ./images/team/img-1_450.jpg 450w,
+                ./images/team/img-1_540.jpg 540w,
+                ./images/team/img-1_708.jpg 708w,
+                ./images/team/img-1_900.jpg 900w
+                " 
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-1_450.jpg"
                 alt="перший член команди"
-                width=""
-                height=""
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team-member">
                 <h3 class="team-member__name">Ігор Дем'яненко</h3>
@@ -202,11 +215,21 @@
               </div>
             </li>
             <li class="card-set__item">
-              <img
-                src="./images/team/photo-Olha-Repina.jpg"
-                alt="другий член команди"
-                width=""
-                height=""
+              <img 
+              srcset="
+                ./images/team/img-2_270.jpg 270w,
+                ./images/team/img-2_354.jpg 354w,
+                ./images/team/img-2_450.jpg 450w,
+                ./images/team/img-2_540.jpg 540w,
+                ./images/team/img-2_708.jpg 708w,
+                ./images/team/img-2_900.jpg 900w
+                " 
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-2_450.jpg"
+                alt="другий член команди"   
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team-member">
                 <h3 class="team-member__name">Ольга Рєпіна</h3>
@@ -222,11 +245,21 @@
               </div>
             </li>
             <li class="card-set__item">
-              <img
-                src="./images/team/photo-Mykola-Tarasov.jpg"
-                alt="третій член команди"
-                width=""
-                height=""
+              <img 
+                srcset="
+                ./images/team/img-3_270.jpg 270w,
+                ./images/team/img-3_354.jpg 354w,
+                ./images/team/img-3_450.jpg 450w,
+                ./images/team/img-3_540.jpg 540w,
+                ./images/team/img-3_708.jpg 708w,
+                ./images/team/img-3_900.jpg 900w
+                " 
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                src="./images/team/img-3_450.jpg"
+                alt="третій член команди"   
+                loading="lazy"
+                width="450"
+                height="460"
               />
               <div class="team-member">
                 <h3 class="team-member__name">Микола Тарасов</h3>
@@ -243,10 +276,20 @@
             </li>
             <li class="card-set__item">
               <img
-                src="./images/team/photo-Mykhailo-Yermakov.jpg"
-                alt="четвертий член командми"
-                width=""
-                height=""
+               srcset="
+              ./images/team/img-4_270.jpg 270w,
+              ./images/team/img-4_354.jpg 354w,
+              ./images/team/img-4_450.jpg 450w,
+              ./images/team/img-4_540.jpg 540w,
+              ./images/team/img-4_708.jpg 708w,
+              ./images/team/img-4_900.jpg 900w
+              " 
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/team/img-4_450.jpg"
+              alt="четвертий член командми"
+              loading="lazy"
+              width="450"
+              height="460"
               />
               <div class="team-member">
                 <h3 class="team-member__name">Михайло Єрмаков</h3>
